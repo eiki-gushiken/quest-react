@@ -1,11 +1,8 @@
 import './App.css'
-import Paragraph from './components/paragraph/paragraph'
-import Button from './components/button/button'
+import Paragraph from './components/StyledText'
+import Button from './components/AlertButton'
 
 const color = "orange"
-const showLabel = (label) => {
-  alert(`A label desse botão é ${label}`)
-}
 
 function App() {
   return (
@@ -14,7 +11,7 @@ function App() {
         Parágrafo colorido e com todas as letras maiúsculas
       </Paragraph>
 
-      <Button label="Baixar CV" showLabel={showLabel}>
+      <Button label="Baixar CV">
         Clique aqui para ver a label
       </Button>
     </>
